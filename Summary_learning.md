@@ -32,6 +32,19 @@ resource "aws_instance" "web" {
 }
 ## Datatypes
 
+### "string"
+### number 2/3/5/24
+### boolean (true/false)
+### List
+lsit of somethings
+List= ["item1", "item2", "item3"]
+### Maps
+similar to dictionaries in Python
+variable "example_map"{
+type = map
+default = {key1= "value1", key2= "value2", key3= "value3"}
+}
+locals.variable "example_map"["key2"]
 ## Conditions
 
 ## Function
