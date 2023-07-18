@@ -46,7 +46,8 @@ default = {key1= "value1", key2= "value2", key3= "value3"}<br>
 }<br>
 locals.variable "example_map"["key2"]<br>
 ## Conditions
-
+resource "aws_instance" "server"{<br>
+   instance_type = var.environment == "development" ? "t2.micro" : "t2.small"
 ## Function
 
 ## Resourcedependency
