@@ -65,6 +65,14 @@ result:<br>
 Hello JOHN CENA! I know you like apple, banana, mango<br>
 
 ## Resourcedependency
+Create relationship between two different resources.there are two types of dependancy :<br>
+#### implicit dependancy
+is done automatically by terraform
+#### explicit dependancy
 
-
-
+for ex:<br>
+resource "aws _instance" "name" {<br>
+vpc security group ids = aws security group.mysg.id<br>
+resource "aws security group" "mysg" {<br>
+#inbound rules<br>
+}
