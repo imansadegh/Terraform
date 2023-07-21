@@ -48,7 +48,21 @@ locals.variable "example_map"["key2"]<br>
 ## Conditions
 resource "aws_instance" "server"{<br>
    instance_type = var.environment == "development" ? "t2.micro" : "t2.small"
+ <br> 
+  Terraform uses resource blocks to manage infrastructure, such as virtual networks, compute instances, or higher-level components such as DNS records.<br>
+  
 ## Function
+The Terraform configuration language allows you to write declarative expressions to create infrastructure. While the configuration language is not a programming language, you can use several built-in functions to perform operations dynamically.
+We have a lot of function in terraform , you can create your self, for example i create function for myself after that you can see the result:<br>
+ex:<br>
+locals {<br>
+name = "John Cena"<br>
+fruits = ["apple", "banana", "mango"]<br>
+message = "Hello ${upper (local .name)}! I know you like ${join(",", local. fruits) }"<br>
+}<br>
+
+result:<br>
+Hello JOHN CENA! I know you like apple, banana, mango<br>
 
 ## Resourcedependency
 
