@@ -4,3 +4,5 @@
 ```
 brew tap hashicorp/tap
 ```
+````
+brew install terraform``
