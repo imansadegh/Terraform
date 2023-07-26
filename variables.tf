@@ -7,3 +7,4 @@ variable "instance_type" {}
 variable "key_name" {} 
 variable "machine _name" {} 
 variable "region" {}
+variable "bucket" {}
