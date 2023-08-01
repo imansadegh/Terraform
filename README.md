@@ -8,7 +8,7 @@ brew tap hashicorp/tap
 brew install terraform
 ```
 ## Important Commands in Terraform
-with this command you can initialize of terraform
+with this command you can initialize of terraform- when you write this command , one folder with name ".terraform" create for your project
 ```
 terraform init
 ```
