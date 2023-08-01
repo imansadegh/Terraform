@@ -26,3 +26,23 @@ with this command you can apply
 ```
 terraform apply
 ```
+You decided to start IaC and run terraform in the middle of project, you need to use this command to import the exist machines or resource.
+```
+terraform import XXXX
+```
+
+```
+terraform fmt
+```
+```
+terraform validate
+```
+
+terraform state list
+
+terraform state show
+
+terraform state rm
+
+terraform refresh
+
